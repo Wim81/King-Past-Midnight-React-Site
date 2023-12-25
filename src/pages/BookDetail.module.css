@@ -1,0 +1,167 @@
+.title {
+    font-family: "BookmanOldStyleBold", serif;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-bottom: 48px;
+}
+
+.mainData,
+.additionalData {
+    display: flex;
+    flex-direction: column;
+}
+
+.bookImg {
+    width: 100%;
+    max-width: 260px;
+    display: block;
+    margin: 0 auto 24px auto;
+}
+
+.likeSection {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.likeIcon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.likeCount {
+    font-family: "BookmanOldStyleBold", serif;
+    font-size: 1.2rem;
+    padding-top: 3px;
+    padding-left: 6px;
+}
+
+.bookYearPages {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+.inCollections {
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+
+.inCollectionsTitle,
+.commentsTitle {
+    font-family: "BookmanOldStyleBold", serif;
+    font-size: 1.2rem;
+}
+
+.inCollectionsAvatars {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inCollectionsAvatar {
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.commentsSection {
+
+}
+
+.comments {
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.addCommentBtn {
+    margin-bottom: 64px;
+}
+
+@media (min-width: 640px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .mainData,
+    .additionalData {
+        flex-direction: row;
+    }
+
+    .additionalDataCollection {
+        padding-right: 24px;
+    }
+
+    .mainData div,
+    .additionalData div {
+        flex: 1 1 0px;
+    }
+
+    .bookImg {
+        margin: initial;
+        margin-bottom: 24px;
+    }
+
+    .bookYearPages {
+        flex-direction: column;
+    }
+
+    .bookYearPages p {
+        margin-bottom: 12px;
+    }
+}
+
+/* ADMIN SECTION */
+.admin {
+    background-color: var(--main-dark);
+    color: var(--main-light);
+    box-shadow: inset 0 0 0 2px var(--main-light);
+    border: 2px solid var(--main-dark);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.adminTitle {
+    font-family: "BookmanOldStyleBold", serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.adminButtons a {
+    display: block;
+    margin-bottom: 12px;
+}
+
+@media (min-width: 640px) {
+    .admin {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .adminTitle {
+        margin-bottom: 0;
+        margin-right: 48px;
+    }
+
+    .adminButtons {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .adminButtons a {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 880Px) {
+    .adminTitle {
+        margin-right: 30%;
+        margin-left: 24px;
+    }
+}
+/* end of ADMIN SECTION */

@@ -1,0 +1,80 @@
+.cta {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "BookmanOldStyleBold", serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    display: inline-block;
+    box-shadow: inset 0 0 0 2px var(--main-light);
+    border: 2px solid var(--main-dark);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.homepageButton {
+    width: 100%;
+    background-color: var(--main-dark);
+    color: var(--main-light);
+    width: 100%;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.primary {
+    background-color: var(--main-dark);
+    color: var(--main-light);
+}
+
+.primary:hover,
+.homepageButton:hover {
+    background-color: var(--main-light);
+    color: var(--main-dark);
+}
+
+:global(.green) {
+    background-color: var(--green);
+}
+
+:global(.red) {
+    background-color: var(--red);
+}
+
+.secondary {
+    background-color: var(--main-light);
+    color: var(--main-dark);
+    box-shadow: inset 0 0 0 2px var(--main-dark);
+    border: 2px solid var(--main-light);
+}
+
+.secondary:hover {
+    background-color: var(--main-dark);
+    color: var(--main-light);
+    box-shadow: inset 0 0 0 2px var(--main-light);
+    border: 2px solid var(--main-dark);
+}
+
+.primary,
+.secondary {
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .homepageButton {
+        max-width: 420px;
+    }
+
+    .primary,
+    .secondary {
+        width: auto;
+    }
+}
+
+/* temp code to hide LP icons */
+div[data-lastpass-icon-root] {
+    display: none;
+}
+/* end of temp code to hide LP icons */

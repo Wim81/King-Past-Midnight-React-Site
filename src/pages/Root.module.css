@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "CenturyGothicRegular";
+    src: local("CenturyGothicRegular"), url("../fonts/GOTHIC.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "BookmanOldStyleBold";
+    src: local("BookmanOldStyleBold"), url("../fonts/BOOKOSB.TTF") format("truetype");
+}
+
+.all {
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-light);
+    color: var(--main-dark);
+    font-family: "CenturyGothicRegular", sans-serif;
+    font-weight: regular;
+    overflow: hidden;
+}
+
+.pageContentContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+}

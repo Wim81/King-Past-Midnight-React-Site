@@ -1,0 +1,69 @@
+.bookHighlight {
+    margin-bottom: 80px;
+}
+
+.bookHighlightTitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    font-family: "BookmanOldStyleBold";
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.bookHighlightContent {
+    padding: 12px 0 24px 0;
+}
+
+.bookHighlightImg {
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    width: 120px;
+    float: left;
+}
+
+.title {
+    font-family: "BookmanOldStyleBold";
+    font-size: 1.2rem;
+    padding: 24px 0 12px 0;
+    margin: 0;
+}
+
+.summary {
+    padding-bottom: 24px;
+}
+
+@media (min-width: 640px) {
+    .bookHighlight {
+        border-bottom: 3px solid var(--main-dark);
+    }
+
+    .title {
+        padding: 36px 0 24px 0;
+    }
+
+    .bookHighlightTitle::after {
+        content: '';
+        flex: 1;
+        margin-left: 2.4rem;
+        height: 3px;
+        background-color: var(--main-dark);
+    }
+
+    .bookHighlightContent {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .bookHighlightImg {
+        width: 160px;
+        padding: 24px 72px;
+        float: none;
+    }
+
+    .button {
+        margin-bottom: 12px;
+    }
+}

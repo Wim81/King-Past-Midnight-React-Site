@@ -1,0 +1,24 @@
+header {
+    background-color: var(--main-light);
+    color: var(--main-dark);
+}
+
+.headerInner {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLogo img {
+    width: 80px;
+}
+
+@media (min-width: 640px) {
+    .headerLogo img {
+        width: 120px;
+    }
+}

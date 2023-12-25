@@ -1,0 +1,144 @@
+nav {
+    font-family: "BookmanOldStyleBold", serif;
+    text-transform: uppercase;
+}
+
+@media (min-width: 640px) {
+    .navMobile {
+        display: none;
+    }
+}
+
+@media (max-width: 639px) {
+    .navDesktop {
+        display: none;
+    }
+
+    .navMobile {
+        transform: translateX(340px);
+        transition: transform 0.3s ease-in-out;
+        position: relative;
+        z-index: 5;
+    }
+
+    :global(.open).navMobile {
+        transform: translateX(32px);
+    }
+}
+
+.navInner {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.navItem a,
+.navItem p {
+    cursor: pointer;
+    color: var(--main-dark);
+    text-decoration: none;
+    margin: 0;
+}
+
+.navDesktop .navItem a.mainNavigationAvatar {
+    color: var(--main-light);
+    position: relative;
+    top: -12px;
+}
+
+.navDesktop .navItem a.mainNavigationAvatar:hover {
+    color: var(--main-light);
+    cursor: pointer;
+}
+
+.navDesktop .navItem {
+    margin-left: 48px;
+}
+
+@media (min-width: 640px) and (max-width: 710px) {
+    .navDesktop .navItem {
+       margin-left: 36px;
+    }
+}
+
+.navDesktop .navItem:hover {
+    transform: scale(1.2);
+    transform-origin: center;
+    transition: all 0.3s;
+}
+
+.navDesktop .navItemSubmenu:hover {
+    transform: scale(1);
+}
+
+.navDesktop .navItem a:hover,
+.navDesktop .navItem p:hover {
+    color: var(--green);
+    transition: all 0.3s;
+}
+
+.navMobile .navInner {
+    flex-direction: column;
+    background-color: var(--main-dark);
+    border: 1px solid var(--main-dark);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 24px;
+    width: 300px;
+    right: 0;
+}
+
+.navMobile .navItem {
+    color: var(--main-light);
+    padding-right: 36px;
+}
+
+.navMobile .navItem a,
+.navMobile .navItem p {
+    color: var(--main-light);
+    width: 100%;
+    display: inline-block;
+    padding-left: 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 36px;
+    margin: 0;
+    text-align: right;
+    cursor: pointer;
+}
+
+.navMobile .navItem:hover {
+    background-color: var(--main-light);
+    color: var(--main-dark);
+}
+
+.navMobile .navItem:hover a,
+.navMobile .navItem:hover p {
+    color: var(--main-dark);
+}
+
+.navMobile .navItem a.active {
+    background-color: var(--green);
+    color: var(--main-light)
+}
+
+.navDesktop .navItem {
+    position: relative;
+}
+
+.navDesktop .navItem a.active {
+    color: var(--green);
+}
+
+.subMenu {
+    position: absolute;
+    width: 180px;
+    text-align: right;
+    left: -130px;
+}
+
+.subMenu p, 
+.subMenu a {
+    padding: 4px 0;
+}

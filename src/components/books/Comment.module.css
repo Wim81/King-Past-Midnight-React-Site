@@ -1,0 +1,24 @@
+.comment {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 3px var(--main-dark) solid;
+}
+
+.comment:last-of-type {
+    border-bottom: 3px var(--main-dark) solid;
+}
+
+.commentAvatar {
+    margin-right: 32px;
+}
+
+.datetime {
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.commentText {
+
+}

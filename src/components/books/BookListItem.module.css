@@ -1,0 +1,110 @@
+.bookItem {
+    list-style-type: none;
+    border: 2px solid var(--main-dark);
+    padding: 24px;
+    margin-bottom: 24px;
+    width: 90%;
+    max-width: 480px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.bookItemInner {
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    width: 100px;
+    padding-right: 12px;
+}
+
+.title {
+    font-family: "BookmanOldStyleBold", serif;
+    font-size: 1.2rem;
+    overflow-wrap: anywhere;
+    margin: 0;
+    padding: 12px 0 24px 0;
+}
+
+.year,
+.pages {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.summaryWrapper {
+    padding-top: 24px;
+    margin:0;
+    line-height: 1.8;
+}
+
+.summary::before {
+    content: '" ';
+}
+
+.summary {    
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.summaryLink {
+    font-weight: bold;
+    color: var(--main-dark);
+    text-decoration: none;
+    border-bottom: 2px solid var(--main-dark);
+}
+
+.summaryLink::after {
+    content: '"';
+    border-bottom: 2px solid var(--main-light);
+    font-weight: normal;
+}
+
+.bookInfo1 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.bookInfo2 .title,
+.bookInfo2 .year,
+.bookInfo2 .pages {
+    display: none;
+}
+
+@media (min-width: 960px) {
+    .bookItem {
+        box-sizing: border-box;
+        width: calc(50% - 12px);
+        max-width: initial;
+    }
+    
+    .bookItemInner {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .img {
+        width: auto;
+        height: 220px;
+        padding-right: 36px;
+    }
+
+    .bookInfo1 .title,
+    .bookInfo1 .year,
+    .bookInfo1 .pages {
+        display: none;
+    }
+    
+    .bookInfo2 .year,
+    .bookInfo2 .pages {
+        display: initial;
+    }
+
+    .bookInfo2 .title {
+        display: block;
+        padding: 12px 0 12px 0;
+    }
+}
